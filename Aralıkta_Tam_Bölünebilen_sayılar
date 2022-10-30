@@ -1,0 +1,20 @@
+namespace Aralıkta_Tam_Bölünebilen_sayılar
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Sayı değer son aralığı yazınız");
+            int sayi = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= sayi; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine("Tam Bölünen sayılar " + i);
+                }
+            }
+            Console.Read();
+        }
+    }
+}
