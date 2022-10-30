@@ -1,0 +1,61 @@
+namespace ATM_Uygulaması
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int bakiye = 4000;
+            string sifre;
+
+            Console.WriteLine("ATM'ye Hoş geldiniz\n Şifrenizi giriniz");
+            sifre=Console.ReadLine();
+
+            if (sifre == "123")
+            {
+                Console.WriteLine("Giriş Başarılı");
+                Console.WriteLine("1.Bakiye Görüntüle\n2.Para Çek\n3.Para Yatır\n4.Çıkış");
+                Console.WriteLine("Yapmak istediğiniz işlemi seçiniz");
+                int cevap=Convert.ToInt32(Console.ReadLine());
+
+                if(cevap == 1)
+                {
+                    Console.WriteLine("Bakiyeniz "+bakiye);
+                }
+                else if (cevap == 2)
+                {
+                    Console.WriteLine("Bakiyeniz "+bakiye+" Çekmek istediğiniz tutarı giriniz");
+                    int miktar=Convert.ToInt32(Console.ReadLine());
+
+                    if (bakiye >= miktar)
+                    {
+                        Console.WriteLine("Paranızı alınız yeni bakiyeniz "+(bakiye-miktar));
+                    }
+                    else
+                    {
+                        Console.WriteLine("Bakiyeniz yetersiz");
+                    }
+                  
+
+                }
+                else if (cevap == 3)
+                {
+                    Console.WriteLine("Bakiyeniz " + bakiye + " Yatırmak istediğiniz tutarı giriniz");
+                    int tutar = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Paranız yatırılmıştır. Yeni bakiyeniz " + (bakiye + tutar));
+
+                }
+                else if(cevap == 4)
+                {
+                    Console.WriteLine("Çıkış yapılıyor");
+                }
+
+
+            }
+            else
+            {
+                Console.WriteLine("Şifreniz Hatalıdır");
+            }
+            Console.Read();
+        }
+}
+}
