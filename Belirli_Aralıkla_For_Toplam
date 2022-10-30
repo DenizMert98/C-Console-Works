@@ -1,0 +1,24 @@
+namespace Belli_Aralık_for_toplam
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Başlangıç değerini giriniz");
+            int sayi1=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Bitiş değerini giriniz");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Artış değerini giriniz");
+            int artis = Convert.ToInt32(Console.ReadLine());
+
+
+            int toplam = 0;
+            for (int i = sayi1; i <= sayi2; i+=artis)
+            {
+                toplam=toplam+i;
+            }
+            Console.WriteLine(toplam);
+            Console.Read();
+        }
+    }
+}
