@@ -1,0 +1,30 @@
+namespace Girilen_Yaşa_Göre_Gelişim_Çağı
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Doğum yılınızı giriniz");
+            int dyil = Convert.ToInt32(Console.ReadLine());
+            int yas = 2022 - dyil;
+
+            if (yas < 20)
+            {
+                Console.WriteLine("Gelişmektesiniz");
+            }
+            else if (yas < 30)
+            {
+                Console.WriteLine("Gençsiniz");
+            }
+            else if (yas < 50)
+            {
+                Console.WriteLine("Yetişkinsiniz");
+            }
+            else
+            {
+                Console.WriteLine("Yaşlısınız");
+            }
+            Console.Read();
+        }
+    }
+}
