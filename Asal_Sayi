@@ -1,0 +1,27 @@
+namespace Asal_Sayi
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Bir sayı giriniz");
+            int sayi = int.Parse(Console.ReadLine());
+            int kontrol = 0;
+            for (int i = 2; i < sayi; i++)
+            {
+                if (sayi % i == 0)
+                {
+                    kontrol++;
+                }
+            }
+
+            if (kontrol != 0)
+            {
+                Console.WriteLine("Sayınız ASAL DEĞİLDİR.");
+            }
+            else
+                Console.WriteLine("Sayınız ASALDIR");
+            Console.Read();
+        }
+    }
+}
