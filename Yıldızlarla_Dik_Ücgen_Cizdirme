@@ -1,0 +1,19 @@
+namespace Yıldızlarla_Dik_Ücgen_Cizdirme
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string yildiz = "*";
+            Console.WriteLine("Yükseklik değeri giriniz");
+            int yukseklik = Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 1; i <= yukseklik; i++)
+            {
+                Console.WriteLine(yildiz);
+                yildiz += "*";
+            }
+            Console.Read();
+        }
+    }
+}
