@@ -1,0 +1,36 @@
+namespace Login_Ekranı
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string kuladi = "Admin";
+            string sifre = "1234";
+
+            Console.WriteLine("Kullanıcı Adınızı giriniz");
+            string kul = Console.ReadLine();
+            Console.WriteLine("Şifrenizi giriniz");
+            string pass = Console.ReadLine();
+
+            if(kul ==kuladi && pass == sifre)
+            {
+                Console.WriteLine("Giriş Başarılı");
+            }
+
+           else if (kul != kuladi && pass==sifre)
+            {
+                Console.WriteLine("Kullanıcı adı Hatalı");
+            }
+            else if (pass != sifre && kul==kuladi)
+            {
+                Console.WriteLine("Şifre Hatalı");
+            }
+            else
+            {
+                Console.WriteLine("Kullanıcı adı ve Şifre Hatalı");
+            }
+            Console.Read();
+
+        }
+    }
+}
