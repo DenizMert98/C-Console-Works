@@ -1,0 +1,24 @@
+namespace Switch_Case_KDV_Örneği
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("KDV'sini öğrenmek istediğiniz ürünü yazınız");
+            string urun = Console.ReadLine();
+
+            switch (urun)
+            {
+                case "oje":
+                case "parfüm":
+                case "takma tirnak":Console.WriteLine("KDV %18");break;
+                case "ekmek":
+                case "su":
+                case "mercimek":Console.WriteLine("KDV %1"); break;
+                default:Console.WriteLine("KDV %8"); break;
+                  
+            }
+            Console.Read();
+        }
+    }
+}
