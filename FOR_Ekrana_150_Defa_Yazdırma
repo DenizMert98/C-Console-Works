@@ -1,0 +1,15 @@
+namespace FOR_Ekrana_150_Defa_Yazdırma
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            for (int i = 1; i<=150; i++)
+            {
+                Console.WriteLine("Bugün güzel bir gün");
+            }
+            Console.Read();
+        }
+    }
+}
