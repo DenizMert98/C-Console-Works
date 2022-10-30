@@ -1,0 +1,26 @@
+namespace Kaçı_Tek_Kaçı_Çift
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int tek = 0, cift = 0;
+            for (int i = 1; i <=10; i++)
+            {
+                Console.WriteLine(i + ". Sayıyı giriniz");
+                int sayi = int.Parse(Console.ReadLine());
+                if (sayi % 2 == 0)
+                {
+                    cift++;
+                }
+                else
+                {
+                    tek++;
+                }
+            }
+            Console.WriteLine("Girdiğiniz sayılardan " + cift + " ÇİFT'tir");
+            Console.WriteLine("Girdiğiniz sayılardan " + tek + " TEK'tir");
+            Console.Read();
+        }
+    }
+}
