@@ -1,0 +1,38 @@
+namespace IF_ELSE_HESAP_MAKİNESİ
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("İlk sayıyı giriniz");
+            double sayi1=Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("İkinci sayıyı giriniz");
+            double sayi2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("1.Toplama \n2.Çıkarma\n3.Çarpma\n4.Bölme");
+            Console.WriteLine("Sayı olarak işleminizi seçiniz");
+            int secim=Convert.ToInt32(Console.ReadLine());
+
+            if (secim == 1)
+            {
+                Console.WriteLine("İşleminizin sonucu "+(sayi1+sayi2));
+            }
+            else if (secim == 2)
+            {
+                Console.WriteLine("İşleminizin sonucu " + (sayi1 - sayi2));
+            }
+            else if (secim == 3)
+            {
+                Console.WriteLine("İşleminizin sonucu " + (sayi1 * sayi2));
+            }
+            else if (secim == 4)
+            {
+                Console.WriteLine("İşleminizin sonucu " + (sayi1 / sayi2));
+            }
+            else
+            {
+                Console.WriteLine("Yanlış işlem seçimi yaptınız");
+            }
+            Console.Read();
+        }
+    }
+}
