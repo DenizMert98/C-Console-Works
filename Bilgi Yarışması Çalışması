@@ -1,0 +1,43 @@
+namespace Bilgi_Yarışması
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string soru1,soru2,soru3;
+            string cevap1,cevap2,cevap3,vcevap;
+            int puan = 0;
+
+            soru1 = "Cumhuriyet kaç yılında ilan edilmiştir?";
+            cevap1 = "1923";
+
+            soru2 = "Kırkpınar yağlı güreşleri ile ünlü ilimiz hangisidir?";
+            cevap2 = "Edirne";
+
+            soru3 = "Kadınlara seçme ve seçilme hakkı kaç yılında verilmiştir?";
+            cevap3 = "1934";
+
+            Console.WriteLine(soru1);
+            vcevap = Console.ReadLine();
+            if (vcevap == cevap1)
+            {
+                puan++;
+            }
+            Console.WriteLine(soru2);
+            vcevap = Console.ReadLine();
+            if (vcevap == cevap2)
+            {
+                puan++;
+            }
+            Console.WriteLine(soru3);
+            vcevap = Console.ReadLine();
+            if (vcevap == cevap3)
+            {
+                puan++;
+            }
+            Console.WriteLine("Oyun Bitti.Puanınız "+puan);
+            Console.Read();
+
+        }
+    }
+}
