@@ -1,0 +1,21 @@
+namespace Tam_Bölenleri
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Tam Bölenlerini öğrenmek istediğiniz sayıyı giriniz");
+            int sayi = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <=sayi; i++)
+            {
+                if (sayi % i == 0)
+                {
+                    
+                    Console.WriteLine(i);
+                }
+            }
+            Console.Read();
+        }
+    }
+}
