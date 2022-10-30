@@ -1,0 +1,29 @@
+namespace VKİ_Hesaplama
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Boyunuzu (m) cinsinden virgül(,) ile giriniz");
+            double boy = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Kilonuzu giriniz");
+            double kilo = Convert.ToDouble(Console.ReadLine());
+            
+            double vki = kilo / (boy*boy);
+
+            if (vki < 20)
+            {
+                Console.WriteLine(vki + " Zayıfsınız");
+            }
+            else if (vki < 25)
+            {
+                Console.WriteLine(vki + " Normalsiniz");
+            }
+            else
+            {
+                Console.WriteLine(vki + " Hafif kilolusunuz");
+            }
+            Console.Read();
+        }
+    }
+}
